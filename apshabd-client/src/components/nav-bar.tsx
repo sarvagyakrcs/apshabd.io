@@ -21,8 +21,8 @@ const navItems = [
 
 const NavBar = (props: Props) => {
     return (
-        <div className="navbar-container sticky top-0 z-50 bg-white dark:bg-gray-900">
-            <nav className="w-full min-w-full flex items-center justify-between bg-zinc-100 shadow-2xl dark:bg-slate-900">
+        <div className="navbar-container hidden md:block sticky top-0 z-50 bg-white dark:bg-gray-900">
+            <nav className="w-auto flex items-center justify-between bg-zinc-100 shadow-2xl dark:bg-slate-900">
                 <a href="/" className="text-xl p-3 cursor-pointer font-semibold dark:text-white">
                     <span className='text-emerald-500 dark:text-emerald-400'>Apshabd.io</span>🤬
                 </a>
@@ -36,7 +36,7 @@ const NavBar = (props: Props) => {
                     ))}
                 </ul>
                 <div className="flex items-center justify-center px-4">
-                    <Button variant={"outline"} className="mx-2">
+                    <Button variant={"outline"} className="hidden md:block mx-2">
                         <a href="https://github.com/sarvagyakrcs/apshabd.io" target='_blank' className="dark:text-gray-300 dark:hover:text-white">Star on Github ⭐️</a>
                     </Button>
                     <ModeToggle />
