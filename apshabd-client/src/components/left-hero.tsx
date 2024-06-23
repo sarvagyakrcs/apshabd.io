@@ -33,10 +33,10 @@ export function LeftHero() {
                     Detect and flag profane language
                 </Highlight>
             </motion.h1>
-            <div className="flex  item-center justify-center w-full mt-10">
+            <div className="hidden md:flex item-center justify-center w-full mt-10">
                 <span className="p-6 text-justify text-lg">Detecting toxic content has always been <span className="font-mono font-semibold text-red-700 dark:text-red-400">SLOW</span> and <br /> <span className="font-mono font-semibold text-red-700 dark:text-red-400">EXPENSIVE</span>. Not anymore. Introducing a fast, free <br /> and open-source profanity filter for your web apps. <br /> </span>
             </div>
-            <div className="flex items-center justify-center w-full">
+            <div className="hidden md:flex items-center justify-center w-full">
                 <div className="flex items-start flex-col p-6 text-lg">
                     {benefits.map((benefit, index) => {
                         return (
