@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 const font = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Apshabd",
+    title: "Apshabd | अपशब्द ",
     description: "The Profanity Detection API is a web service designed to detect and flag profane language in text messages. Built using the Hono framework and deployed on a serverless environment such as Cloudflare Workers, this API leverages vector search technologies to accurately identify offensive language.",
 };
 
