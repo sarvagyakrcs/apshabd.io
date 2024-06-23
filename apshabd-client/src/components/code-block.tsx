@@ -72,21 +72,21 @@ const CodeBlock: React.FC<Props> = () => {
     
 
     return (
-        <Card>
+        <Card className='w-72 md:w-full'>
             <CardHeader className="flex items-center flex-row justify-start min-w-full">
                 <span className="text-xs bg-slate-900 text-white dark:bg-slate-200 px-3 py-1 rounded-md dark:text-black">POST</span>
                 <p className="text-xl pb-3 px-2">|</p>
-                <a className="text-sm pb-3 hover:text-blue-700 hover:dark:text-blue-400 hover:underline" href={API_URL}>{API_URL}</a>
+                <a className="text-sm pb-3 hover:text-blue-700 truncate hover:dark:text-blue-400 hover:underline" href={API_URL}>{API_URL}</a>
             </CardHeader>
-            <CardContent className="flex items-center flex-row justify-center">
+            <CardContent className="flex items-center flex-col md:flex-row justify-center">
                 <Input
                     onChange={(e) => setInput(e.target.value)}
                     placeholder="Enter Your Text Here"
                     value={input}
-                    className="p-3 w-96 placeholder-text-center placeholder-items-center placeholder-mb-1"
+                    className="p-3 w-32 lg:w-96 placeholder-text-center placeholder-items-center placeholder-mb-1"
                 />
 
-                <Button disabled={loading} onClick={fetchData} className='mx-4'> {loading ? "Checking Profanity" : "Check for Profanity"} </Button>
+                <Button disabled={loading} onClick={fetchData} className='mx-2 lg:mx-4'> {loading ? "Checking Profanity" : "Check for Profanity"} </Button>
             </CardContent>
             <CardFooter>
                 <Card className="w-full p-4">
