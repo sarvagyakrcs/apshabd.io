@@ -9,7 +9,7 @@ const font = Lato({ subsets: ["latin"], weight: ["400"] });
 
 const Hero = (props: Props) => {
     return (
-        <main className='flex items-center w-full min-w-full text-slate-800 dark:text-slate-50 h-[93vh]'>
+        <main className='flex flex-col md:flex-row items-center w-full min-w-full text-slate-800 dark:text-slate-50 h-[93vh]'>
             <div className={cn("left h-[93vh] w-1/2 flex flex-col items-center justify-center", font.className)}>
                 <LeftHero />
             </div>
